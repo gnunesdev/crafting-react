@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@crafting-react/modules/projects/redux": [
+        "modules/projects/redux/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
