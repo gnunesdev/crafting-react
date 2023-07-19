@@ -1,1 +1,1 @@
-export * from './lib/modules-projects-redux';
+export * from './lib/redux-root';

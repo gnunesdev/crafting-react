@@ -1,5 +1,7 @@
+import { ReduxRoot } from '@crafting-react/modules/projects/redux';
+
 export function App() {
-  return <h1>Hello world</h1>;
+  return <ReduxRoot />;
 }
 
 export default App;
