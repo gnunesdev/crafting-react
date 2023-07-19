@@ -1,12 +1,15 @@
 import { FormEvent, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { add } from '../../store';
 
 export const AddTodo = () => {
   const [newTodo, setNewTodo] = useState('');
+  const dispatch = useDispatch();
 
   function handleAddNewTodo(e: FormEvent) {
     e.preventDefault();
-
-    console.log(newTodo);
+    dispatch(add({ newTodo }));
+    setNewTodo('');
   }
 
   return (
