@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@crafting-react/modules/projects/crud-com-qualidade": [
+        "modules/projects/crud-com-qualidade/src/index.ts"
+      ],
       "@crafting-react/modules/projects/redux": [
         "modules/projects/redux/src/index.ts"
       ]
