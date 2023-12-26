@@ -6,17 +6,14 @@
   "tags": [],
   "targets": {
     "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "modules/projects/crud-com-qualidade/**/*.{ts,tsx,js,jsx}"
-        ]
-      }
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["coverage/modules/projects/crud-com-qualidade"],
+      "outputs": [
+        "{workspaceRoot}/coverage/modules/projects/crud-com-qualidade"
+      ],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "../../../coverage/modules/projects/crud-com-qualidade"

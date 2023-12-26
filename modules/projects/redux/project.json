@@ -6,15 +6,12 @@
   "tags": [],
   "targets": {
     "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["modules/projects/redux/**/*.{ts,tsx,js,jsx}"]
-      }
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["coverage/modules/projects/redux"],
+      "outputs": ["{workspaceRoot}/coverage/modules/projects/redux"],
       "options": {
         "passWithNoTests": true,
         "reportsDirectory": "../../../coverage/modules/projects/redux"
